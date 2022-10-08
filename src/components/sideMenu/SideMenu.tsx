@@ -5,6 +5,7 @@ import { Menu } from "antd";
 import { GifOutlined } from "@ant-design/icons";
 
 export const SideMenu: React.FC = () => {
+  // console.log("sideMenuList===>"+JSON.stringify(sideMenuList))
   return (
     <Menu mode="vertical" className={styles["side-menu"]}>
       {sideMenuList.map((m, index) => (

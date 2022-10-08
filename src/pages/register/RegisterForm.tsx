@@ -17,7 +17,7 @@ export const RegisterForm = () => {
   const onFinish = async (values: any) => {
     console.log("Success:", values);
     try {
-      await axios.post("http://123.56.149.216:8080/auth/register", {
+      await axios.post("http://localhost:3001/register", {
         email: values.username,
         password: values.password,
         confirmPassword: values.confirm,

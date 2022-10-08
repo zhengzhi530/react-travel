@@ -43,6 +43,7 @@ export const Header: React.FC = () => {
 
   useEffect(()=>{
     if(jwt){
+      console.log("jwt===============> "+jwt)
       const token = jwt_decode<JwtPayload>(jwt)
       setUsername(token.username)
     }
