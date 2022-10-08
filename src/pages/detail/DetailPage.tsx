@@ -23,12 +23,13 @@ import { addShoppingCartItem } from "../../redux/shoppingCart/slice";
 
 const { RangePicker } = DatePicker;
 
-interface MatchParams {
-  touristRouteId: string;
-}
+// interface MatchParams {
+//   touristRouteId: string;
+// }
 
 export const DetailPage: React.FC = () => {
-  const { touristRouteId } = useParams();
+  // const { touristRouteId } = useParams()
+  const touristRouteId = "39996f34-013c-4fc6-b1b3-0c1036c47169"
   // const [loading, setLoading] = useState<boolean>(true);
   // const [product, setProduct] = useState<any>(null);
   // const [error, setError] = useState<string | null>(null);

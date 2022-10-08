@@ -42,8 +42,9 @@ class HomePageComponent extends React.Component<PropsType> {
   }
 
   render() {
-
+    
     const { t, productList, loading, error } = this.props;
+    // console.log("productList=======>"+ JSON.stringify(productList))
     if (loading) {
       return (
         <Spin
@@ -78,7 +79,7 @@ class HomePageComponent extends React.Component<PropsType> {
             </Typography.Title>
           }
           sideImage={sideImage}
-          products={productList[0]}
+          products={productList[0].touristRoutes}
         />
         <ProductCollection
           title={
@@ -87,7 +88,7 @@ class HomePageComponent extends React.Component<PropsType> {
             </Typography.Title>
           }
           sideImage={sideImage2}
-          products={productList[1]}
+          products={productList[1].touristRoutes}
         />
         <ProductCollection
           title={
@@ -96,12 +97,12 @@ class HomePageComponent extends React.Component<PropsType> {
             </Typography.Title>
           }
           sideImage={sideImage3}
-          products={productList[2]}
+          products={productList[2].touristRoutes}
         />
         <BusinessPartners />
       </MainLayout>
     );
-  }
+  } 
 }
 
 export const HomePage = connect(
